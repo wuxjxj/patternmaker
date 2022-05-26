@@ -1,0 +1,18 @@
+
+.jumbotron{
+  margin: 0;
+  height: 100px;
+}
+#controls {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 400px;
+  height: 400px;
+  border-radius: 3px;
+  border: #cecece 1px solid;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+
+
+ 
