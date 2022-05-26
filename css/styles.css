@@ -4,9 +4,8 @@
   height: 100px;
 }
 #controls {
-  position: absolute;
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
+ 
+  
   background: #ffffff;
   width: 400px;
   height: 400px;
