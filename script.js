@@ -7,5 +7,11 @@ const selectedIndex=null;
 imageIndexes.forEach(i =>{
   const image=document.createElement('img');
   image.src=`/images/sample-${i}.jpg`;
+  image.classList.add("galleyImg");
+  image.addEventListener("click",()=>{
+
+
+    
+  })
   gallery.appendChild(image);
 })
