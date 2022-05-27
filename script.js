@@ -6,12 +6,11 @@ const selectedIndex=null;
 
 imageIndexes.forEach(i =>{
   const image=document.createElement('img');
-  image.src=`/images/sample-${i}.jpg`;
-  image.classList.add("galleyImg");
+  image.src=`images/sample-${i}.png`;
+  image.alt=`sample pattern${i}`;
+  image.classList.add("galleryImg");
   image.addEventListener("click",()=>{
 
-
-    
   })
   gallery.appendChild(image);
-})
+});
