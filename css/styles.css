@@ -3,6 +3,12 @@ body{
   font-family: Roboto, verdana, tahoma, sans-serif;
   font-size: 10pt;
   font-weight: 300;
+  
+  background-image: url('https://www.papertraildesign.com/wp-content/uploads/2018/10/Black-white-plaid-wrapping-paper.jpg');
+  background-repeat: repeat;
+  background-position: left top;
+  margin-right: 200px;
+
 }
 .jumbotron{
   margin: 0;
