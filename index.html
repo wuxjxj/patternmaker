@@ -15,7 +15,7 @@
     <title>Pattern Maker</title>
   </head>
 
-  <body style="background-image: url('https://www.papertraildesign.com/wp-content/uploads/2018/10/Black-white-plaid-wrapping-paper.jpg');
+  <body id="bodyindex" style="background-image: url('https://www.papertraildesign.com/wp-content/uploads/2018/10/Black-white-plaid-wrapping-paper.jpg');
   background-repeat: repeat;
   background-position: left top;
   margin-right: 200px;">
@@ -98,13 +98,13 @@
                     <fieldset> 
                     <legend>Pattern Type</legend>
                     <div>
-                        <input type="radio" name="dot" id="dot" value="dot">
+                        <input onchange="changeBackground()" type="radio" name="patternType" id="dot" value="dot">
                         <label for="dot">Dot</label>
-                        <input type="radio" name="stripe" id="stripe" value="stripe">
+                        <input onchange="changeBackground()" type="radio" name="patternType" id="stripe" value="stripe">
                         <label for="stripe">Stripe</label>
-                        <input type="radio" name="buffaloCheck" id="buffaloCheck" value="buffaloCheck">
+                        <input onchange="changeBackground()" type="radio" name="patternType" id="buffaloCheck" value="buffaloCheck" checked>
                         <label for="buffaloCheck">Buffalo Check</label>
-                        <input type="radio" name="Diamond" id="diamond" value="diamond">
+                        <input onchange="changeBackground()" type="radio" name="patternType" id="diamond" value="diamond">
                         <label for="diamond">Diamond</label>
                     </div>
                   </fieldset>
@@ -140,6 +140,7 @@
                     </div>
                     
                   </fieldset>
+                  
             </div>
           </div>
         </div>
@@ -153,7 +154,7 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+  <script src="script.js"></script>
 </body>
   </body>
 </html>

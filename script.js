@@ -22,3 +22,19 @@ popup.addEventListener('click',()=>{
   popup.src='';
   popup.alt='';
 });
+
+function changeBackground(){
+  const dot = document.getElementById("dot");
+  const stripe=document.getElementById("stripe");
+  const buffaloCheck=document.getElementById("buffaloCheck");
+  const diamond=document.getElementById("diamond");
+  
+
+  if(dot.checked==true){
+    document.body.style.backgroundImage="url('images/sample-7.png')";
+  } else if(stripe.checked==true){
+    document.body.style.backgroundImage="url('images/sample-8.png')";
+  } else if(diamond.checked==true){
+    document.body.style.backgroundImage="url('images/sample-10.png')";
+  }
+}
