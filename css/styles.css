@@ -34,7 +34,7 @@ body{
   
   grid-gap: 1em;
   padding: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .galleryImg{
@@ -47,6 +47,23 @@ body{
 
 }
 .galleryImg:hover{
-  transform:trans
+  transform:translateY(-2px);
+  box-shadow:3px 3px 10px rgb(216, 212, 212);
 }
- 
+ #popup{
+   position:fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   background-color:rgba(0, 0, 0, 0.3);
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   transform:translateY(-100%);
+   transition:250ms transform;
+   padding:50px;
+ }
+ #selectedImage{
+   max-height: 100%;
+ }

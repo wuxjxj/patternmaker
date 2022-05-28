@@ -10,7 +10,15 @@ imageIndexes.forEach(i =>{
   image.alt=`sample pattern${i}`;
   image.classList.add("galleryImg");
   image.addEventListener("click",()=>{
+    popup.style.transform=`translateY(0)`;
+     selectedImage.src=`images/sample-${i}.png`;
 
   })
   gallery.appendChild(image);
+});
+
+popup.addEventListener('click',()=>{
+  popup.style.transform=`translateY(-100%)`;
+  popup.src='';
+  popup.alt='';
 });
